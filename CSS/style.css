@@ -4,7 +4,7 @@
     align-items: center;
     margin: 0rem 20rem ;
     margin-top: 2rem;
-    height: 50vh;
+    height: 15vh;
     border-radius: 2rem;
     padding: 30px;
 }
@@ -24,5 +24,18 @@ h1{
     background-color: rgb(219, 209, 60);
     padding:0px 10px;
     border-radius: 1rem;
+    margin-right: 5px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+button{
+    font-size: 2rem;
+    background-color: rgb(60, 219, 113);
+    padding:10px 10px;
+    border-radius: 10px;
     margin-right: 5px;
 }
