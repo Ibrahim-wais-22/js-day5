@@ -8,7 +8,7 @@
     border-radius: 2rem;
     padding: 30px;
 }
-h1{
+h1 , #CurrentTime{
     font-size: 3rem;
     background-color: rgb(219, 209, 60);
     padding:40px 10px;
@@ -16,16 +16,7 @@ h1{
     margin-right: 5px;
     text-align: center;
 }
-.hour{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    background-color: rgb(219, 209, 60);
-    padding:0px 10px;
-    border-radius: 1rem;
-    margin-right: 5px;
-}
+
 .btns{
     display: flex;
     justify-content: center;

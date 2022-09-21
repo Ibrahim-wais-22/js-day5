@@ -1,10 +1,46 @@
-let time = new Date;
-document.querySelector(".timeH").innerHTML= `${time.getHours()} :`;
-document.querySelector(".timeMm").innerHTML= `${time.getMinutes()} :`;
-document.querySelector(".timeS").innerHTML= time.getSeconds();
-document.querySelector(".timeD").innerHTML= time.getDate();
-document.querySelector(".timeM").innerHTML= time.getMonth();
-document.querySelector(".timeY").innerHTML= time.getFullYear();
+// function updateTime(){
+//     let time = new Date;
+//         time.getHours() 
+//         time.getMinutes()
+//         time.getSeconds()
+//         time.getDate()
+//         time.getMonth()
+//         time.getFullYear()
+    
+// }
+// document.querySelector(".timeMm").innerHTML= ;
+// document.querySelector(".timeS").innerHTML= ;
+// document.querySelector(".timeD").innerHTML= ;
+// document.querySelector(".timeM").innerHTML= ;
+// document.querySelector(".timeY").innerHTML= ;
+GetTime();
+
+function GetTime(){
+  var Time = new Date()
+  var hour = Time.getHours()
+  var minute = Time.getMinutes()
+  var second = Time.getSeconds()
+
+  if(minute < 10){
+    minute = "0" + minute
+  }
+
+  if(second < 10){
+    second = "0" + second
+  }
+
+  var GetCurrentTime = hour + ":" + minute + ":" + second + " ";
+
+  if(hour > 11){
+    GetCurrentTime += "p.m."
+  }else{
+    GetCurrentTime += "a.m."
+  }
+
+  document.getElementById("CurrentTime").innerHTML = GetCurrentTime;
+  setTimeout(GetTime,1000)
+}
+
 
 // ----------------------------------------------------------------
 function random1(){
